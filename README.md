@@ -1,3 +1,3 @@
 # responsiveWebsite
 
-## Building a responsive website from scratch with HTML & CSS. 
+## Building a responsive website from scratch with HTML & SCSS. 
