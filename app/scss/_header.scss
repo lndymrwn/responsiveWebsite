@@ -1,4 +1,5 @@
 .header {
+  
 
   nav {
     padding: 24px;
@@ -13,7 +14,7 @@
 
 
   &__menu { //mobile  menu
-    
+
     > span {
       display: block;
       width: 26px;
@@ -26,4 +27,11 @@
     }
   }
 
+  &__links {
+
+    a {
+      font-size: $fontSmall;
+    }
+
+  }
 }
