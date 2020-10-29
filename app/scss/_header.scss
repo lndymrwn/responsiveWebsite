@@ -30,16 +30,18 @@
   &__links {
 
     a {
-      font-size: $fontSmall;
-      color: $grayishBlue;
+      font-size: $fontSmall !important;
+      color: $grayishBlue !important;
     }
 
   }
+
+  &__cta {
+    font-size: $fontSmall;
+    color: $white;
+  }
 }
 
-&__cta {
-  font-size: $fontSmall;
-  color: $white;
-}
+
 
 
