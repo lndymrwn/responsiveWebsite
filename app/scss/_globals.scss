@@ -61,14 +61,14 @@ body {
   //visibility 
   .hide-for-mobile {
     //hide for table and mobile
-    @include breakpoint-down(medium){
+    @include breakPointDown(medium){
       display: none;
     }
   }
 
   .hide-for-desktop {
     //hide for desktop viewport widths
-    @include  breakpoint-up(large){
+    @include  breakPointUp(large){
       display: none;
     }
   }
