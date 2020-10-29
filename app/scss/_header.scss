@@ -5,12 +5,12 @@
     padding: 24px;
   }
 
-  &__logo {
+  //&__logo {
 
-    img {
+   // img {
 
-    }
-  }
+  //  }
+ // }
 
 
   &__menu { //mobile  menu
@@ -31,7 +31,15 @@
 
     a {
       font-size: $fontSmall;
+      color: $grayishBlue;
     }
 
   }
 }
+
+&__cta {
+  font-size: $fontSmall;
+  color: $white;
+}
+
+
