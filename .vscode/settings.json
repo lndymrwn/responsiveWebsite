@@ -4,5 +4,11 @@
     "Felx",
     "customise",
     "flexbox"
+  ],
+  "cSpell.ignoreWords": [
+    "flexbox",
+    "ms",
+    "ms flexbox",
+    "xlarge"
   ]
 }
