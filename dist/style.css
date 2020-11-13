@@ -165,7 +165,6 @@ button, .button {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: #2d314d;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2d314d), to(transparent));
   background-image: linear-gradient(#2d314d, transparent);
 }
