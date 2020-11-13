@@ -2,15 +2,16 @@
   
 
   nav {
-    padding: 24px;
+    padding: 17px 24px;
   }
 
-  //&__logo {
+  &__logo {
 
-   // img {
-
-  //  }
- // }
+    img {
+      width: 8.8125rem;
+      height: 1.375rem;
+    }
+  }
 
 
   &__menu { //mobile  menu
@@ -30,20 +31,47 @@
   &__links {
 
     a {
+      position: relative;
       font-size: $fontSmall !important;
       color: $grayishBlue !important;
+      transition: color 300ms ease-in-out;
 
       &:not(:last-child){
-        margin-right: 32px;
+      margin-right: 32px;
       }
 
-    }
+      &::before{
+        content:"";
+        display: block;
+        position: absolute;
+        height: 5px;
+        left: 0;
+        right: 0;
+        bottom: -30px;
+        background: linear-gradient(to right, $limeGreen, $brightCyan);
+        opacity: 0;
+        transition: opacity 300ms ease-in-out;
 
+      }
+
+      &:hover{
+      color: $darkBlue;
+      
+      &::before {
+      opacity: 1;
+      }
+    }
+    }
   }
 
   &__cta {
     font-size: $fontSmall;
     color: $white;
+    transition: opacity 300ms ease-in-out;
+
+    &:hover{
+      opacity: 0.75;
+    }
   }
 }
 
