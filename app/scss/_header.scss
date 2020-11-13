@@ -4,11 +4,6 @@
 
   &.open {
 
-    .overlay{
-      display: block;
-      animation: fade-in 300ms ease-in-out forwards;
-    }
-
     .header__menu{ 
       > span:first-child{
       transform: rotate(45deg);
@@ -25,7 +20,6 @@
   }
 
   .overlay{
-
     opacity: 0;
     position: fixed;
     top: 3.75rem; 
@@ -35,6 +29,8 @@
 
     background-color: $darkBlue;
     background-image: linear-gradient($darkBlue, transparent);
+
+
   }
 
   nav {
