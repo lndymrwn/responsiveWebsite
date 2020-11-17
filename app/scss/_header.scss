@@ -4,7 +4,7 @@
 
   &.open {
 
-    .header__toggle{ 
+    .header__menu{ 
       > span:first-child{
       transform: rotate(45deg);
       }
@@ -32,7 +32,8 @@
   }
 
   nav {
-    padding: 17px 24px;
+    padding-top: 1.065rem;
+    padding-bottom: 1.065rem;
   }
 
   &__logo {
@@ -44,7 +45,7 @@
   }
 
 
-  &__toggle { //mobile  menu Toggle
+  &__menu { //mobile  menu
 
     > span {
       display: block;
@@ -58,7 +59,21 @@
         margin-bottom: 5px;
       }
     }
+  }
 
+  &__menuToggle{
+    background: $white;
+    margin: 0 1.5rem;
+    padding: 1.625rem;
+    border-radius: 3px;
+
+
+    a{
+      display: block;
+      text-align: center;
+      color: $darkBlue;
+      padding: .625rem;
+    }
   }
 
   &__links {
