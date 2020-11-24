@@ -63,18 +63,22 @@ body {
 
 //Button
   button, .button {
-  position: relative;
-  display: inline-block;
-  padding: 0.875rem 2.1875rem;
-  background-image: linear-gradient(to right, $limeGreen, $brightCyan);
-  border: 0;
-  border-radius: 50px;
-  cursor: pointer;
-  color: $white;
-  font-weight: 400;  
-  font-size: $fontSmall;  
-  transition: opacity 300ms ease-in-out;
-  overflow: hidden;
+    position: relative;
+    display: inline-block;
+    padding: 0.875rem 2.1875rem;
+    background-image: linear-gradient(to right, $limeGreen, $brightCyan);
+    border: 0;
+    border-radius: 50px;
+    cursor: pointer;
+    color: $white;
+    font-weight: 400;  
+    font-size: $fontSmall;  
+    transition: opacity 300ms ease-in-out;
+
+
+    &:hover{
+      opacity: 0.75;
+    }
   }
 
   //visibility 

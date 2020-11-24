@@ -1,4 +1,11 @@
 .hero{
+  @include breakPointUp(large){
+    display: flex;
+
+    align-items: center;
+
+  }
+
 
   &__image{
     position: relative;
@@ -7,6 +14,13 @@
     background-repeat: no-repeat;
     background-position: center center;
     min-height: 17.5rem;
+
+      @include breakPointUp(large){
+      flex: 1;
+      order: 2;
+      height: 41rem;
+
+    }
 
     &::before{
       content: "";
@@ -22,6 +36,12 @@
 
   &__text{
     text-align: center;
+
+    @include breakPointUp(large){
+      flex: 1;
+      order 1;
+
+    }
 
     h1{
       font-weight: 300;
