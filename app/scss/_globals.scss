@@ -21,6 +21,11 @@ body {
   }
   }
 
+  h1, h2, h3 {
+    margin-top: 0px;
+    
+  }
+
   a, a:visited, a:hover {
     text-decoration: none;
   
@@ -28,8 +33,12 @@ body {
 
 // Spacing
 .container{
-  padding-left: 1.5rem;
+  padding-top: 2.25rem;
   padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-bottom: 2.25rem;
+  
+
 }
 
 
