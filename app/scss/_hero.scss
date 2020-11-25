@@ -16,9 +16,11 @@
     min-height: 17.5rem;
 
       @include breakPointUp(large){
-      flex: 1;
+      flex: 3;
       order: 2;
       height: 41rem;
+      background-image: url('/images/bg-intro-desktop.svg');
+      background-position: left center;
 
     }
 
@@ -38,8 +40,8 @@
     text-align: center;
 
     @include breakPointUp(large){
-      flex: 1;
-      order 1;
+      flex: 2;
+      order: 1;
 
     }
 
