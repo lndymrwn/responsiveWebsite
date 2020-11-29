@@ -335,6 +335,13 @@ button:hover, .button:hover {
   min-height: 17.5rem;
 }
 
+@media (min-width: 40em) {
+  .hero__image {
+    min-height: 25rem;
+    background-position: center 70%;
+  }
+}
+
 @media (min-width: 64em) {
   .hero__image {
     -webkit-box-flex: 3;
@@ -344,12 +351,24 @@ button:hover, .button:hover {
         -ms-flex-order: 2;
             order: 2;
     height: 41rem;
-    background-image: url("/images/bg-intro-desktop.svg");
-    background-position: left center;
+    background-image: none;
   }
 }
 
-.hero__image::before {
+@media (min-width: 64em) {
+  .hero__image::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-image: url("/images/bg-intro-mobile.svg");
+    background-repeat: no-repeat;
+    width: 150%;
+    background-size: 122%;
+    background-position: 0% 83%;
+  }
+}
+
+.hero__image::after {
   content: "";
   position: absolute;
   height: 100%;
@@ -358,6 +377,22 @@ button:hover, .button:hover {
   background-size: 93%;
   background-repeat: no-repeat;
   background-position: center bottom;
+}
+
+@media (min-width: 40em) {
+  .hero__image::after {
+    background-size: 52%;
+  }
+}
+
+@media (min-width: 64em) {
+  .hero__image::after {
+    width: 120%;
+    height: 122%;
+    background-size: 94%;
+    background-position: center 150%;
+    left: 22%;
+  }
 }
 
 .hero__text {
