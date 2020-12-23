@@ -105,6 +105,32 @@ body.noscroll {
 
 h1, h2, h3 {
   margin-top: 0px;
+  font-weight: 300;
+  line-height: 1.15;
+  color: #2d314d;
+}
+
+h1 {
+  font-size: 2.31rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 64em) {
+  h1 {
+    font-size: 3.25rem;
+  }
+}
+
+h2 {
+  font-size: 1.875rem;
+  margin-bottom: 1.5625rem;
+}
+
+@media (min-width: 64em) {
+  h2 {
+    font-size: 2.25rem;
+    margin-bottom: 2.25rem;
+  }
 }
 
 a, a:visited, a:hover {
@@ -117,24 +143,24 @@ a, a:visited, a:hover {
 }
 
 .container--pall {
-  padding-right: 2.25;
+  padding-right: 2.25rem;
   padding-left: 2.25rem;
-  padding-top: 2.25;
+  padding-top: 2.25rem;
   padding-bottom: 2.25rem;
 }
 
 .container--py {
-  padding-top: 2.25;
+  padding-top: 2.25rem;
   padding-bottom: 2.25rem;
 }
 
 .container--px {
-  padding-right: 2.25;
+  padding-right: 2.25rem;
   padding-left: 2.25rem;
 }
 
 .container--pt {
-  padding-top: 2.25;
+  padding-top: 2.25rem;
 }
 
 .container--pr {
@@ -411,30 +437,31 @@ button:hover, .button:hover {
   }
 }
 
-.hero__text h1 {
-  font-weight: 300;
-  font-size: 2.31rem;
-  line-height: 1.15;
-  color: #2d314d;
-  margin-bottom: 1.5rem;
-}
-
-@media (min-width: 64em) {
-  .hero__text h1 {
-    font-size: 3.25rem;
-  }
-}
-
 .hero__text p {
   line-height: 1.5;
   margin-bottom: 2.25rem;
 }
 
-@media (min-width: 64em) {
+@media (min-width: 40em) {
   .feature__grid {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.feature__item {
+  padding: .9375rem;
+  border: 1px solid magenta;
+}
+
+@media (min-width: 40em) {
+  .feature__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
   }
 }
 
