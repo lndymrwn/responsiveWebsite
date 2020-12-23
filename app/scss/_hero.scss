@@ -2,7 +2,7 @@
   background-color: $veryLightGray;
 
   .container {
-    @include breakPointUp(large){
+    @include breakPointUp(large) {
       display: flex;
       align-items: center;
     }
@@ -16,12 +16,12 @@
     background-position: center center;
     min-height: 17.5rem; 
 
-    @include breakPointUp(medium){
+    @include breakPointUp(medium) {
       min-height: 25rem;
       background-position: center 70%;
     }
 
-      @include breakPointUp(large){
+      @include breakPointUp(large) {
       flex: 3;
       order: 2;
       height: 41rem;
@@ -31,12 +31,13 @@
 
     &::before {
 
-      @include breakPointUp(large){
+      @include breakPointUp(large) {
         content: "";
         position: absolute;
         height: 100%;
         background-image: url('/images/bg-intro-mobile.svg');
         background-repeat: no-repeat;
+
         //background-position: center bottom;
         width: 150%;
         background-size: 122%;
@@ -76,19 +77,6 @@
       order: 1;
       text-align: left;
     }
-
-    h1 {
-      font-weight: 300;
-      font-size: 2.31rem;
-      line-height: 1.15;
-      color: $darkBlue;
-      margin-bottom: 1.5rem;
-
-      @include breakPointUp(large){
-        font-size: $fontXlg;
-      }
-    }
-
     p {
       line-height: 1.5;
       margin-bottom: 2.25rem;

@@ -25,8 +25,31 @@ body {
     }
   }
 
+  //Text 
   h1, h2, h3 {
     margin-top: 0px;
+    font-weight: 300;
+    line-height: 1.15;
+    color: $darkBlue;
+  }
+
+  h1 {
+    font-size: 2.31rem;
+    margin-bottom: 1.5rem;
+
+    @include breakPointUp(large) {
+      font-size: $fontXlg;
+    }
+  }
+
+  h2 {
+    font-size: 1.875rem;
+    margin-bottom: 1.5625rem;
+
+    @include breakPointUp(large){
+      font-size: 2.25rem;
+      margin-bottom: 2.25rem;
+    }
   }
 
   a, a:visited, a:hover {
@@ -40,24 +63,24 @@ body {
   margin: 0 auto;
 
   &--pall {
-    padding-right: 2.25;
+    padding-right: 2.25rem;
     padding-left: 2.25rem;
-    padding-top: 2.25;
+    padding-top: 2.25rem;
     padding-bottom: 2.25rem;
   }
 
   &--py {
-    padding-top: 2.25;
+    padding-top: 2.25rem;
     padding-bottom: 2.25rem;
   }
 
   &--px {
-    padding-right: 2.25;
+    padding-right: 2.25rem;
     padding-left: 2.25rem;
   }
 
   &--pt {
-    padding-top: 2.25;
+    padding-top: 2.25rem;
   }
 
   &--pr {
