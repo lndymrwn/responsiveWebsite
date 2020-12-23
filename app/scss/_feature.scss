@@ -3,12 +3,16 @@
 
   &__grid {
 
-    @include breakpoint-up(large){
+    @include breakPointUp(large){
       display: flex;
     }
   }
 
   &__item {
+
+    @include breakPointUp(large){
+      flex: 1;
+    }
 
   }
 
