@@ -630,20 +630,27 @@ button:hover, .button:hover {
 }
 
 @media (min-width: 64em) {
-  .footer {
+  .footer .container {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[3] 2fr;
-        grid-template-columns: repeat(3, 1fr) 2fr;
-    -ms-grid-rows: (1fr)[2];
-        grid-template-rows: repeat(2, 1fr);
+    -ms-grid-columns: 2fr 1fr 1fr 3fr;
+        grid-template-columns: 2fr 1fr 1fr 3fr;
+    -ms-grid-rows: 1fr, auto;
+        grid-template-rows: 1fr, auto;
         grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+    gap: 1rem;
     justify-items: start;
   }
 }
 
 .footer a {
   color: white;
+}
+
+@media (max-width: 63.9375em) {
+  .footer a {
+    line-height: 2.25;
+  }
 }
 
 .footer__logo {
@@ -681,8 +688,8 @@ button:hover, .button:hover {
 }
 
 .footer__social a {
-  color: white;
   display: inline-block;
+  height: 1.25rem;
 }
 
 .footer__social a:not(:last-child) {
@@ -700,12 +707,14 @@ button:hover, .button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  line-height: 2rem;
   font-size: .9375rem;
 }
 
 @media (min-width: 64em) {
   .footer__links {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
@@ -730,6 +739,10 @@ button:hover, .button:hover {
   }
 }
 
+.footer__links a {
+  line-height: 2.25;
+}
+
 @media (min-width: 64em) {
   .footer__cta {
     text-align: right;
@@ -744,6 +757,11 @@ button:hover, .button:hover {
   }
 }
 
+.footer__copyright {
+  font-size: .8125rem;
+  color: #9698a6;
+}
+
 @media (min-width: 64em) {
   .footer__copyright {
     grid-area: copyright;
@@ -752,7 +770,6 @@ button:hover, .button:hover {
         align-self: end;
     -ms-grid-column-align: end;
         justify-self: end;
-    font-size: .9375rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
