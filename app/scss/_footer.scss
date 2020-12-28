@@ -21,7 +21,7 @@
   &__logo {
     display: inline-block;
 
-    @include brePointDown(medium){
+    @include breakPointDown(medium){
       margin-bottom: 1.875rem;
     }
     @include breakPointUp(large){
@@ -32,7 +32,7 @@
   &__social {
     align-self: end;
 
-    @include brePointDown(medium){
+    @include breakPointDown(medium){
       margin-bottom: 1.875rem;
     }
     @include breakPointUp(large){
@@ -60,15 +60,15 @@
     }
 
     &.col1 {
+
       @include breakPointUp(large){
         grid-area: links1;
       }
-
     }
 
     &.col2 {
 
-    @include brePointDown(medium){
+    @include breakPointDown(medium){
       margin-bottom: 1.875rem;
     }
       @include breakPointUp(large){
@@ -86,7 +86,7 @@
     }
 
     a.button {
-      @include brePointDown(medium){
+      @include breakPointDown(medium){
         margin-bottom: 1.875rem;
       }
     }
@@ -98,6 +98,7 @@
       grid-area: copyright;
       align-self: end;
       justify-self: end;
+      font-size: .9375rem;
     }
   }
 }
