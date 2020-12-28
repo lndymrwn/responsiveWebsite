@@ -1,8 +1,9 @@
 .feature {
+  background-color: $lightGrayishBlue;
 
   &__intro {
     margin-bottom: 3.75rem;
-    
+
     @include breakPointUp (large) {
       width: 60%;
     }
@@ -18,7 +19,6 @@
 
   &__item {
     padding:.9375rem;
-    border:1px solid magenta;
 
     @include breakPointUp(medium) {
       flex: 0 0 50%;
@@ -31,14 +31,29 @@
   }
 
   &__icon {
-
+    
+    @include breakPointUp(large){
+      margin-bottom: 2.75rem;
+    }
   }
 
   &__title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.15;
+    color: $darkBlue;
+    margin-bottom: 1.5rem;
 
+    @include breakPointUp(large) {
+      font-size: 1.5rem;
+      margin-bottom: 2.125rem;
+    }
   }
 
   &__description {
+    font-size: .875rem;
+    line-height: 1.5rem;
+
 
   }
 

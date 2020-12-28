@@ -63,15 +63,25 @@ body {
   margin: 0 auto;
 
   &--pall {
+    padding-top: 4.375rem;
     padding-right: 2.25rem;
+    padding-bottom: 4.375rem;
     padding-left: 2.25rem;
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
+
+    @include breakPointUp(large){
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
   }
 
   &--py {
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
+    padding-top: 4.375rem;
+    padding-bottom: 4.375rem;
+
+    @include breakPointUp(large){
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
   }
 
   &--px {
@@ -80,7 +90,11 @@ body {
   }
 
   &--pt {
-    padding-top: 2.25rem;
+    padding-top: 4.375rem;
+
+    @include breakPointUp(large){
+      padding-top: 6rem;
+    }
   }
 
   &--pr {
@@ -88,7 +102,11 @@ body {
   }
 
   &--pb { 
-    padding-bottom: 2.25rem;
+    padding-bottom: 4.375rem;
+
+    @include breakPointUp(large){
+      padding-bottom: 6rem;
+    }
   }
 
   &--pl {
