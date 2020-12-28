@@ -1,5 +1,10 @@
 .feature {
   background-color: $lightGrayishBlue;
+  text-align: center;
+
+  @include breakPointUp(medium){
+    text-align: left;
+  }
 
   &__intro {
     margin-bottom: 3.75rem;
@@ -27,7 +32,6 @@
     @include breakPointUp(large) {
       flex: 1;
     }
-
   }
 
   &__icon {
@@ -42,19 +46,17 @@
     font-weight: 300;
     line-height: 1.15;
     color: $darkBlue;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
 
     @include breakPointUp(large) {
       font-size: 1.5rem;
-      margin-bottom: 2.125rem;
+      margin-bottom: 1.5rem;
     }
   }
 
   &__description {
     font-size: .875rem;
     line-height: 1.5rem;
-
-
   }
 
 }
