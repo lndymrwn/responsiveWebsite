@@ -4,6 +4,15 @@
   padding: 2.5rem;
   text-align: center;
 
+  @include breakPointUp(large){
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "logo links1 links2 cta"
+    "social links1 links2 cta";
+  }
+
   a {
     color: $white;
   }
@@ -11,10 +20,18 @@
   &__logo {
     display: inline-block;
     margin-bottom: 1.875rem;
+
+    @include breakPointUp(large){
+      grid-area: logo;
+    }
   }
 
   &__social {
     margin-bottom: 1.875rem;
+
+    @include breakPointUp(large){
+      grid-area: social;
+    }
 
     a {
       color: $white;
@@ -32,12 +49,18 @@
     line-height: 2rem;
 
     &.col1 {
-
+      @include breakPointUp(large){
+        grid-area: links1;
+      }
 
     }
 
     &.col2 {
       margin-bottom: 1.875rem;
+
+      @include breakPointUp(large){
+      grid-area: links2;
+    }
 
     }
   }
