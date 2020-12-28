@@ -10,7 +10,8 @@
     grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
     "logo links1 links2 cta"
-    "social links1 links2 cta";
+    "social links1 links2 copyright";
+    justify-items: start;
   }
 
   a {
@@ -19,16 +20,21 @@
 
   &__logo {
     display: inline-block;
-    margin-bottom: 1.875rem;
 
+    @include brePointDown(medium){
+      margin-bottom: 1.875rem;
+    }
     @include breakPointUp(large){
       grid-area: logo;
     }
   }
 
   &__social {
-    margin-bottom: 1.875rem;
+    align-self: end;
 
+    @include brePointDown(medium){
+      margin-bottom: 1.875rem;
+    }
     @include breakPointUp(large){
       grid-area: social;
     }
@@ -47,6 +53,11 @@
     flex-direction: column;
     align-items: center;
     line-height: 2rem;
+    font-size: .9375rem;
+
+    @include breakPointUp(large){
+      align-items: start;
+    }
 
     &.col1 {
       @include breakPointUp(large){
@@ -56,8 +67,10 @@
     }
 
     &.col2 {
-      margin-bottom: 1.875rem;
 
+    @include brePointDown(medium){
+      margin-bottom: 1.875rem;
+    }
       @include breakPointUp(large){
       grid-area: links2;
     }
@@ -67,12 +80,24 @@
 
   &__cta {
 
+    @include breakPointUp(large){
+      text-align: right;
+      justify-self: end;
+    }
+
     a.button {
-      margin-bottom: 1.875rem;
+      @include brePointDown(medium){
+        margin-bottom: 1.875rem;
+      }
     }
   }
 
   &__copyright {
 
+    @include breakPointUp(large){
+      grid-area: copyright;
+      align-self: end;
+      justify-self: end;
+    }
   }
 }
