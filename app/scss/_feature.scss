@@ -1,5 +1,13 @@
 .feature {
 
+  &__intro {
+    margin-bottom: 3.75rem;
+    
+    @include breakPointUp (large) {
+      width: 60%;
+    }
+  }
+
   &__grid {
 
     @include breakPointUp(medium){
